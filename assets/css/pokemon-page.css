@@ -1,0 +1,16 @@
+.cardPokemon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pokemonTitle{
+    text-transform: capitalize;
+}
+.abilityList{
+    list-style: none;
+}
+.cardPokemon img{
+    max-width: 100%;
+    height: 150px;
+}
