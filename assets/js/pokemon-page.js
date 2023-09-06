@@ -10,7 +10,7 @@ function getPokemonDetails(){
     .then((response) => {
         pokemonName.innerHTML = response.name
         pokemonImg.src = response.sprites.front_default        
-        const newList = response.abilities.map((ability) => (`<li">${ability.ability.name}</li>`))
+        const newList = response.abilities.map((ability) => (`<li>${ability.ability.name}</li>`)).join('')
         abilityList.innerHTML += newList
     })    
 }
